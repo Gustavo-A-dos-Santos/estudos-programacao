@@ -1,6 +1,6 @@
 package Lista_1;
 
-public class media {
+public class    media {
 
     public float somaTotal(float[] array){
         float soma = 0;
