@@ -7,7 +7,9 @@ import java.util.Scanner;
 public class PrjEqSegGrau_POO1 {
 
     public static void main(String[] args) {
-        DadosEntrada de = new DadosEntrada();
+        Menu mn = new Menu();
+        mn.interfa();
+        /*DadosEntrada de = new DadosEntrada();
         de.setA(1);
         de.setB(5);
         de.setC(6);
@@ -26,7 +28,8 @@ public class PrjEqSegGrau_POO1 {
         System.out.println("X¹: "+ds.getX1l());
         System.out.println("X²: "+ds.getX2l());
         System.out.println("xV: "+ds.getxV());
-        System.out.println("yV: "+ds.getyV());     
+        System.out.println("yV: "+ds.getyV());  */
+        
     }
 }
 

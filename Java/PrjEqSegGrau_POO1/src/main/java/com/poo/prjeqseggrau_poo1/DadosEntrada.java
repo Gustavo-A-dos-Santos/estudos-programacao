@@ -23,7 +23,7 @@ public class DadosEntrada
     }
 
     public void setB(double b) {
-        this.b = b;
+        this.b =b;
     }
 
     public double getC() {
@@ -31,7 +31,7 @@ public class DadosEntrada
     }
 
     public void setC(double c) {
-        this.c = c;
+        this.c =c;
     }
     
     

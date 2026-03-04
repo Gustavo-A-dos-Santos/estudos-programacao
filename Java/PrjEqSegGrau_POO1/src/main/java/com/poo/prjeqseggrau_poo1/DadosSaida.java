@@ -11,6 +11,10 @@ public class DadosSaida {
     private double delta;
     private double xV;
     private double yV;
+    private double soma;
+    private double subtracao;
+    private double mult;
+    private double div;
 
     public double getX1l() {
         return x1l;
@@ -50,6 +54,34 @@ public class DadosSaida {
 
     public void setyV(double yV) {
         this.yV = yV;
+    }
+    public double getSoma() {
+        return soma;
+    }
+
+    public void setSoma(double soma) {
+        this.soma=soma;
+    }
+    public double getSubtracao() {
+        return subtracao;
+    }
+
+    public void setSubtracao(double subtracao) {
+        this.subtracao = subtracao;
+    }
+    public double getMult() {
+        return mult;
+    }
+
+    public void setMult(double mult) {
+        this.mult = mult;
+    }
+    public double getDiv() {
+        return div;
+    }
+
+    public void setDiv(double div) {
+        this.div = div;
     }
 
 }
