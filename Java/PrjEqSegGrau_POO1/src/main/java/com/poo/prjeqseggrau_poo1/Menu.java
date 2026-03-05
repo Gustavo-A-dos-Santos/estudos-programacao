@@ -69,6 +69,10 @@ public class Menu {
                     System.out.println("x1: " + ds.getX1l());
                     ds = esg.x12(de);
                     System.out.println("x2: " + ds.getX2l());
+                    ds = esg.xV(de);
+                    System.out.println("xV: " + ds.getxV());
+                    ds = esg.yV(de);
+                    System.out.println("yV: " + ds.getyV());
             }
 
             System.out.print("\nDeseja continuar? (s/n): ");
