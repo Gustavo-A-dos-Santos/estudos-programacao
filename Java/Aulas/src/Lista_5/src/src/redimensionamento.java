@@ -1,5 +1,3 @@
-package Lista_5;
-
 public class redimensionamento {
     public int[] novo_array(int[] array, int add) {
         int[] novo_array = new int[array.length * 2];
