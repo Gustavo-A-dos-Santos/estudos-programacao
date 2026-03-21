@@ -1,3 +1,7 @@
+package Lista_5;
+
+import Lista_4.inverter;
+
 public class redimensionamento {
     public int[] novo_array(int[] array, int add) {
         int[] novo_array = new int[array.length * 2];
@@ -15,13 +19,17 @@ public class redimensionamento {
                 return array;
             }
         }
-        System.out.println("Array lotado, crie outro");
-        return null;
+        return  novo_array(array, add);
+    }
+    public static void imprimir_vetor(int[] vetor){
+        inverter.imprimir_vetor(vetor);
     }
     public void main(){
         int[] vetor = {50, 40, 30, 20, 1};
-        adicionar(vetor, 10);
-        int[] novo_vetor = novo_array(vetor, 10);
+        imprimir_vetor(vetor);
+        vetor = adicionar(vetor, 10);
+        imprimir_vetor(vetor);
+
 
 
     }
