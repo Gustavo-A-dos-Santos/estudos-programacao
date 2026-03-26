@@ -12,7 +12,7 @@ public interface MyArrayListTAD {
     void remove(int item);
 
     //Busch
-    int find(int index);
+    int find(int item);
     int get(int index);
     void set(int index, int num);
 
@@ -20,4 +20,5 @@ public interface MyArrayListTAD {
     boolean isFull();
     void count();
     void display();
+    void addSorted(int num);
 }
