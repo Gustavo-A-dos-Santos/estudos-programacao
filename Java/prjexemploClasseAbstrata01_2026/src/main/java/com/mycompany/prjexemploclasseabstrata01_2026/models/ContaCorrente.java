@@ -28,6 +28,8 @@ public class ContaCorrente extends Conta{
         if(this.saldo>=valorTotalSaque){
             this.saldo-=valorTotalSaque;
             System.out.println(String.format("Saque de R$ %.2f realizado. (Taxa de R$ %.2f aplicada)", valor, TAXA));
+        } else {
+            System.out.println("Saldo insuficiente para realizar o saque e cobrir a taxa de serviço.");
         }
     }
     
