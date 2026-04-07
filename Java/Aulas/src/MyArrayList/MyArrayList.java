@@ -1,4 +1,7 @@
 package MyArrayList;
+
+import java.util.Arrays;
+
 //addFirst, addLast, insertAt), remoção (removeFirst, removeLast, removeAt, remove),
 // busca (find, get) e atualização (set),
 public class MyArrayList implements MyArrayListTAD {
@@ -12,20 +15,14 @@ public class MyArrayList implements MyArrayListTAD {
         size = 0;
     }
     public void add(int num){
-        if(isFull()){
-            System.out.println("Erro, array cheio!");
-            return;
-        }
+        isFull();
         array[size] = num;
         size++;
     }
     //Adicionar em
     @Override
     public void addFirst(int num) {
-        if(isFull()){
-            System.out.println("Erro ao adicionar um novo elemento, lista cheia!!");
-            return;
-        }
+        isFull();
         for(int i=size; i>0; i--) {
             if(array[i]==0){
                 array[i] = array[i-1];
@@ -38,19 +35,13 @@ public class MyArrayList implements MyArrayListTAD {
     }
     @Override
     public void addLast(int num){
-        if(isFull()){
-            System.out.println("Erro ao adicionar um novo elemento, lista cheia!!");
-            return;
-        }
+        isFull();
         array[size] = num;
         size++;
     }
     @Override
     public void insertAt(int num, int index){
-        if(isFull()){
-            System.out.println("Erro ao adicionar um novo elemento, lista cheia!!");
-            return;
-        }
+        isFull();
         for (int i = index; i < capacity-1; i++) {
             array[i+1] = array[i];
         }
@@ -133,7 +124,12 @@ public class MyArrayList implements MyArrayListTAD {
         return false;
     }
     @Override
-    public boolean isFull(){
+    public void isFull(){
+        if(size>=capacity){
+            array = Arrays.copyOf(array,capacity*2);
+        }
+    }
+    public boolean isFullBool(){
         if(size>=capacity){
             return true;
         }

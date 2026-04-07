@@ -17,7 +17,7 @@ public interface MyArrayListTAD {
     void set(int index, int num);
 
     boolean isEmpty();
-    boolean isFull();
+    void isFull();
     void count();
     void display();
     void addSorted(int num);
